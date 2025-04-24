@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Expense</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Let’s Get Cent-sible!</h1>
+<h3>Start tracking your spending — your wallet will thank you!</h3>
+    <nav>
+      <ul>
+        <li><a href="finalproject.html">Home</a></li>
+        <li><a href="expenses.html">Add Expense</a></li>
+        <li><a href="visualize.html">Visualize</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Add Expense</h2>
+    <form id="expenseForm">
+      <div class="expense-row">
+        <input type="date" id="date" required />
+        <input type="number" id="amount" placeholder="Amount ($)" min="0.01" step="0.01" required />
+        <input type="text" id="description" placeholder="Category / Description" required />
+        <select id="payment" required>
+          <option value="">Payment Method</option>
+          <option value="Cash">Cash</option>
+          <option value="Debit">Debit</option>
+          <option value="Credit">Credit</option>
+        </select>
+        <button type="submit">Add</button>
+      </div>
+    </form>
+    <img src="wallet.jpeg" alt="Budget Icon">
+    <div id="expenseList"></div>
+
+  </main>
+
+  <footer>
+ <p> 2025 Budget Tracker by Orla Duffy</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

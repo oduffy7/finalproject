@@ -1,0 +1,142 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #2a569d;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  display: none;
+}
+
+.section:target,
+.section:first-of-type {
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input,
+select,
+button {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #2a589d;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #215286;
+}
+
+#expenseList {
+  margin-top: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  main {
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+  .home-flex {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .home-flex img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .home-text {
+    flex: 1;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+  }
+  
+  button {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+}
+footer {
+    background-color: #2a569d;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
